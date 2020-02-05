@@ -11,7 +11,8 @@ pulse.search.math
 pulse.tasks
 pulse.tasks.listeners
 pulse.ui
-pulse.ui.charts
 pulse.ui.components
+pulse.ui.components.controllers
+pulse.ui.components.models
 pulse.ui.frames
 pulse.util
