@@ -1,8 +1,10 @@
 pulse
 pulse.input
 pulse.input.listeners
+pulse.io.export
 pulse.io.readers
 pulse.problem.schemes
+pulse.problem.schemes.solvers
 pulse.problem.statements
 pulse.properties
 pulse.search.direction
