@@ -22,14 +22,14 @@
                 <p class="view"><a href="https://github.com/kotik-coder/PULsE">View the Project on GitHub <small>kotik-coder/PULsE</small></a></p>
 
                 <ul>
-                    <li><a href="https://github.com/kotik-coder/PULsE/releases/download/v1.66/Binaries.zip">Executable JAR <strong>in .zip</strong></a></li>
-                    <li><a href="https://github.com/kotik-coder/PULsE/releases/download/v1.66/Binaries.tar.gz">Executable JAR <strong>in .tar.gz</strong></a></li>
+                    <li><a href="https://github.com/kotik-coder/PULsE/releases/download/v1.78F/PULsE_1-78.zip">Executable JAR <strong>in .zip</strong></a></li>
+                    <li><a href="https://github.com/kotik-coder/PULsE/releases/download/v1.78F/PULsE_1-78.tar.gz">Executable JAR <strong>in .tar.gz</strong></a></li>
                     <li><a href="https://github.com/kotik-coder/PULsE">View On <strong>GitHub</strong></a></li>
                 </ul>
             </header>
             <section>
                 <h2><strong>P</strong>rocessing <strong>U</strong>nit for <strong>L</strong>aser Fla<strong>s</strong>h<strong> E</strong>xperiments</h2>
-		<h3>Current Stable Version: <a href="https://github.com/kotik-coder/PULsE/releases/tag/v1.66">1.66</a></h3>
+		<h3>Current Stable Version: <a href="https://github.com/kotik-coder/PULsE/releases/tag/v1.78F">1.78F</a></h3>
 
                 <p align="justify"> PULsE allows effective treatment of raw data generated in laser flash experiments where conditions may not be ideal for simpler analysis. 
 		PULsE analyses the heating curves, calculates and outputs the thermal properties of the sample, such as the thermal diffusivity, based on the inverse solution of a heat transfer problem. The software is specifically tailored for use in the 
@@ -50,8 +50,12 @@
 		
 		Main features of PULsE:
                 <ul>
-                    <li> Calculates the time-temperature profiles for the laser flash experiments by solving heat conduction problems with high-accuracy finite difference schemes 
+                    <li> Calculates the time-temperature profiles for the laser flash experiments by solving heat transfer problems with high-accuracy finite difference schemes and numerical solvers 
                     <li> Solves the reverse heat conduction problems by using advanced numerical optimisation techniques
+                    <li> Ability to fully customise the optimisation procedure by adjusting the number of search variables and fitting domain
+                    <li> May re-construct missing data, e.g. due to detector failure or electronic circuit overheating
+                    <li> Capable of correcting systematic errors e.g. due to incorrect pulse timing
+                    <li> Uses statistical helpers to facilitate and enhance data analysis
                     <li> Provides an easy to use, light-weight graphical user interface based on Swing and JFreeChart
                     <li> Automatically estimates the available computing power and tries to use multi-threading for batch processing of tasks
                     <li> Plots interactive heating curves for the user to adjust the calculation domain and to check the quality of fit
@@ -59,7 +63,24 @@
 		    <li> Comprehensive logging that can show both intermediate execution steps and time events
 		    <li> Ability to export everything using either an html or a csv format
                 </ul>
-		
+
+		Problem statements supported in this version:
+                <ul>
+                    <li> Classical One-Dimensional
+                    <li> Classical Two-Dimensional
+                    <li> Distributed Laser Absorption
+                    <li> Diathermic Model
+                    <li> Participating Medium (fully coupled radiative-conductive heat transfer)
+                </ul>
+
+        Statistical toolkit includes:
+                <ul>
+                    <li> Normality tests (Kolmogorov, Anderson-Darling)
+                    <li> Correlation tests (Spearman, Pearson)
+                    <li> Range-penalised least squares, AIC statistic
+   
+                </ul>		
+
 		<p>PULsE is distributed under the <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a> license.</p> 
 		
             </section>
