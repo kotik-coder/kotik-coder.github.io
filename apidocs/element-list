@@ -13,7 +13,7 @@ pulse.problem.schemes.rte.dom
 pulse.problem.schemes.rte.exact
 pulse.problem.schemes.solvers
 pulse.problem.statements
-pulse.problem.statements.penetration
+pulse.problem.statements.model
 pulse.properties
 pulse.search
 pulse.search.direction
@@ -33,4 +33,3 @@ pulse.ui.components.panels
 pulse.ui.frames
 pulse.ui.frames.dialogs
 pulse.util
-repository
