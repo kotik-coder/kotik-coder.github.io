@@ -6,6 +6,7 @@ pulse.io.export
 pulse.io.readers
 pulse.math
 pulse.math.linear
+pulse.math.transforms
 pulse.problem.laser
 pulse.problem.schemes
 pulse.problem.schemes.rte
@@ -17,6 +18,7 @@ pulse.problem.statements.model
 pulse.properties
 pulse.search
 pulse.search.direction
+pulse.search.direction.pso
 pulse.search.linear
 pulse.search.statistics
 pulse.tasks
@@ -33,3 +35,4 @@ pulse.ui.components.panels
 pulse.ui.frames
 pulse.ui.frames.dialogs
 pulse.util
+repository
