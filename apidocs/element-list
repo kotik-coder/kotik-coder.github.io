@@ -5,6 +5,7 @@ pulse.input.listeners
 pulse.io.export
 pulse.io.readers
 pulse.math
+pulse.math.filters
 pulse.math.linear
 pulse.math.transforms
 pulse.problem.laser
