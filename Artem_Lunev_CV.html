@@ -3,87 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artem Lunev - Senior Research Software Engineer / HPC Specialist</title>
+    <title>Artem Lunev - Senior Research Software Engineer</title>
     <style>
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 1024px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: #ffffff;
         }
         
         .header {
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 20px;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 15px;
             margin-bottom: 20px;
+            text-align: center;
         }
         
         h1 {
             color: #2c3e50;
             margin-bottom: 5px;
-            font-size: 2.2em;
+            font-size: 2.4em;
+            font-weight: 300;
         }
         
         h2 {
             color: #34495e;
-            border-bottom: 1px solid #bdc3c7;
-            padding-bottom: 5px;
-            margin-top: 25px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            font-weight: 400;
         }
         
         h3 {
             color: #2c3e50;
-            margin-bottom: 5px;
-        }
-        
-        h4 {
-            color: #2c3e50;
             margin-bottom: 8px;
-            margin-top: 20px;
+            font-weight: 500;
         }
         
         .subtitle {
-            font-size: 1.2em;
+            font-size: 1.3em;
             color: #7f8c8d;
             margin-bottom: 15px;
+            font-weight: 300;
         }
         
         .contact-info {
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 20px;
             margin-bottom: 10px;
         }
         
         .contact-item {
-            display: flex;
-            align-items: center;
+            font-size: 0.95em;
         }
         
         .section {
             margin-bottom: 25px;
         }
         
-        .job-title {
-            font-weight: bold;
-            color: #2c3e50;
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
         }
         
         .company {
-            font-weight: bold;
+            font-weight: 600;
             color: #2980b9;
+            font-size: 1.1em;
         }
         
         .date {
             color: #7f8c8d;
-            font-style: italic;
+            font-size: 0.9em;
+        }
+        
+        .job-title {
+            font-weight: 500;
+            color: #2c3e50;
+            margin-bottom: 15px;
         }
         
         ul {
             padding-left: 20px;
+            margin: 10px 0;
         }
         
         li {
@@ -91,9 +100,19 @@
         }
         
         .highlight {
-            background-color: #fffacd;
-            padding: 2px 4px;
-            border-radius: 3px;
+            background-color: #e8f4fd;
+            padding: 3px 6px;
+            border-radius: 4px;
+            border-left: 3px solid #2980b9;
+            font-weight: 500;
+        }
+        
+        .achievement {
+            background-color: #f8f9fa;
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 6px;
+            border-left: 4px solid #27ae60;
         }
         
         a {
@@ -105,100 +124,263 @@
             text-decoration: underline;
         }
         
-        .languages {
-            color: #7f8c8d;
+        .tech-pill {
+            display: inline-block;
+            background: #ecf0f1;
+            padding: 4px 12px;
+            margin: 3px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        
+        .performance-tier {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .tier-item {
+            text-align: center;
+            flex: 1;
+            padding: 0 10px;
+        }
+        
+        .tier-label {
             font-size: 0.9em;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .tier-value {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 0.95em;
+        }
+        
+        .profile-text {
+            text-align: center;
+            font-size: 1.05em;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .education-item {
+            margin-bottom: 15px;
+        }
+        
+        .education-degree {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .education-details {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+        
+        .architecture-detail {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border-left: 4px solid #8e44ad;
+        }
+        
+        .performance-critical {
+            color: #c0392b;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Artem Lunev</h1>
-        <div class="subtitle">Senior Research Software Engineer / HPC Specialist / Performance-Critical Systems Developer</div>
-        
-        <div class="contact-info">
-            <div class="contact-item">Moscow, Russia</div>
-            <div class="contact-item">Telegram: <strong>@kotik_coder</strong></div>
-            <div class="contact-item">Phone: <strong>+7 (991) 920-5532</strong></div>
-            <div class="contact-item">Email: <strong><a href="mailto:alounev@list.ru">alounev@list.ru</a></strong></div>
+<div class="header">
+    <h1>Artem Lunev</h1>
+    <div class="subtitle">Senior Research Software Engineer</div>
+    
+    <div class="contact-info">
+        <div class="contact-item">Moscow, Russia</div>
+        <div class="contact-item">Telegram: <strong>@kotik_coder</strong></div>
+        <div class="contact-item">Email: <strong><a href="mailto:alounev@list.ru">alounev@list.ru</a></strong></div>
+        <div class="contact-item">GitHub: <strong><a href="https://github.com/kotik-coder">github.com/kotik-coder</a></strong></div>
+        <div class="contact-item">Google Scholar: <strong><a href="https://scholar.google.ru/citations?user=oHQtRr0AAAAJ&hl=ru&oi=ao">Scholar Profile</a></strong></div>
+    </div>
+    
+    <div style="color: #7f8c8d; font-size: 0.9em; margin-top: 10px;">
+        Citizenship: Russia • Willing to relocate • Open to remote • 
+        Languages: English (C2), Russian (Native), Portuguese (B1)
+    </div>
+</div>
+
+    <div class="section">
+        <h2>Professional Profile</h2>
+        <div class="profile-text">
+            Research Software Engineer with expertise spanning the entire computational stack—from 
+            <strong>low-level processor optimization</strong> to <strong>high-level scientific frameworks</strong>. 
+            Expert in performance-critical systems with deep understanding of concurrency, numerical methods, 
+            and hardware-aware algorithm design.
         </div>
         
-        <div>
-            Citizenship: Russia • Willing to relocate • Open to travel
-            <span class="languages">• Languages: English (C2), Russian (Native), Portuguese (B1)</span>
+        <div class="performance-tier">
+            <div class="tier-item">
+                <div class="tier-label">Performance-Critical</div>
+                <div class="tier-value">Custom SIMD • Intel MKL • OpenBLAS</div>
+            </div>
+            <div class="tier-item">
+                <div class="tier-label">System Architecture</div>
+                <div class="tier-value">Reflection Systems • Plugin Architecture</div>
+            </div>
+            <div class="tier-item">
+                <div class="tier-label">Rapid Development</div>
+                <div class="tier-value">Python • Math.NET • Apache Commons</div>
+            </div>
         </div>
     </div>
 
     <div class="section">
-        <h2>Profile</h2>
+        <h2>Technical Expertise</h2>
+        
+        <h3>Languages & Computational Stack</h3>
         <p>
-            Research software engineer specializing in numerical algorithms, high-performance computing (HPC), and performance optimization of latency-critical systems. Expertise in computational physics, scientific software architecture, and hardware-aware algorithm design. Proven track record in developing robust, reproducible, and high-efficiency solvers for PDEs/ODEs, inverse problems, and thermophysical modeling.
+            <span class="tech-pill">C</span>
+            <span class="tech-pill">Java</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">C++</span>
+            <span class="tech-pill">C#</span>
+            <span class="tech-pill">SIMD/AVX</span>
+            <span class="tech-pill">OpenMP</span>
+            <span class="tech-pill">Intel MKL</span>
+            <span class="tech-pill">OpenBLAS</span>
+            <span class="tech-pill">LAPACK</span>
+            <span class="tech-pill">FFTW</span>
+        </p>
+        
+        <h3>Software Architecture</h3>
+        <p>
+            <span class="tech-pill">Reflection-Based Systems</span>
+            <span class="tech-pill">Plugin Architecture</span>
+            <span class="tech-pill">Hierarchical Property Management</span>
+            <span class="tech-pill">Dynamic Service Discovery</span>
+            <span class="tech-pill">Event-Driven Task Management</span>
+            <span class="tech-pill">Modular Layered Design</span>
+            <span class="tech-pill">Self-Aware Object Graphs</span>
+            <span class="tech-pill">Concurrent Computation Scheduling</span>
+            <span class="tech-pill">Extensible Framework Design</span>
+        </p>
+        
+        <h3>Scientific Computing</h3>
+        <p>
+            <span class="tech-pill">Heat Transfer Modeling</span>
+            <span class="tech-pill">Radiative Transfer (RTE)</span>
+            <span class="tech-pill">Inverse Problems</span>
+            <span class="tech-pill">Spectral Methods</span>
+            <span class="tech-pill">ODE/PDE Solvers</span>
+            <span class="tech-pill">Optimization Algorithms</span>
+            <span class="tech-pill">Signal Processing</span>
+            <span class="tech-pill">Uncertainty Quantification</span>
+            <span class="tech-pill">Model Selection Criteria</span>
         </p>
     </div>
 
     <div class="section">
-        <h2>Skills</h2>
-        <p>
-            <strong>Languages & Platforms:</strong> Java, Python, C, C++, C#, Linux, Git, CI/CD<br>
-            <strong>HPC & Optimization:</strong> OpenMP, MPI, SIMD/AVX (AVX2, AVX-512), Intel MKL, OpenBLAS, FFTW, PARDISO, cache modeling, memory-layout optimization (SoA/AoS), microbenchmarking, branch prediction analysis, code profiling (perf, VTune, gprof, Valgrind)<br>
-            <strong>Numerical Methods:</strong> Spectral collocation, FEM, FDTD, ADI, stiff ODE/PDE solvers (DUMKA3, TR-BDF2/ESDIRK), tridiagonal solvers, Toeplitz systems, Levenberg–Marquardt, quasi-Newton, SLSQP, COBYLA, KKT conditions<br>
-            <strong>Scientific Computing:</strong> SciPy, NumPy, Math.NET, COMSOL, Meep, FEniCS, VTK, PyVista, HDF5<br>
-            <strong>Software Engineering:</strong> Modular architecture, MVP/Swing GUI, design patterns (Strategy, Factory, Observer), reflection-based discovery, event-driven task management, low-GC Java, primitive arrays, reproducible workflows, plugin-based IO<br>
-            <strong>Domain Expertise:</strong> Laser Flash Analysis (LFA), thermal diffusivity, radiative transfer (DOM), inverse heat transfer, porous/semi-transparent/orthotropic/multilayer materials, ASTM/DIN standards, uncertainty quantification, AIC/BIC/Fisher model selection, spectral noise filtering (FFT, high-pass, 50/60 Hz)
-        </p>
+        <h2>Professional Experience</h2>
+        
+        <div class="job-header">
+            <div class="company">Huawei</div>
+            <div class="date">March 2023 – Present</div>
+        </div>
+        <div class="job-title">Senior Engineer A (Computational Modeling) | Moscow, Russia</div>
+        
+        <div class="achievement">
+            <strong>Key Achievement:</strong> Developed high-performance solvers for transient thermomechanics achieving sub-40ms performance for real-time control systems
+        </div>
+        
+        <ul>
+            <li>Developed performance-critical <strong>C solvers</strong> using spectral collocation on Chebyshev-Gauss-Lobatto nodes</li>
+            <li>Optimized CPU performance using <span class="performance-critical">custom SIMD routines (AVX2/AVX-512)</span> combined with <span class="performance-critical">Intel MKL</span> for maximum performance</li>
+            <li>Applied OpenMP parallelization and cache-aware memory layouts for multi-core efficiency</li>
+            <li>Implemented both matrix-based formulations and FFT-based approaches using FFTW library</li>
+            <li>Used <strong>Python for rapid prototyping</strong> and algorithm validation before performance-critical implementation</li>
+            <li>Developed custom trajectory optimization using Toeplitz matrix structure and KKT conditions</li>
+        </ul>
+        
+<div class="job-header">
+    <div class="company">Netzsch Gerätebau GmbH</div>
+    <div class="date">February 2021 – February 2022</div>
+</div>
+<div class="job-title">R&D Project Lead (LFA Measurement Systems) | Germany</div>
+
+<div class="achievement">
+    <strong>Key Achievement:</strong> Modernized LFA software core with performance-appropriate technology selection
+</div>
+
+<ul>
+    <li>Modernized legacy code to <strong>C# / Math.NET</strong> for maintainability where performance was non-critical</li>
+    <li>Retained and optimized <strong>C++ performance kernels</strong> for computationally intensive operations</li>
+    <li>Developed and validated algorithms for porous, semi-transparent, orthotropic, and multilayer materials</li>
+    <li>Created parametric laser/xenon pulse model using PCHIP splines and Levenberg–Marquardt optimization</li>
+    <li>Reduced measurement uncertainty to <3% through model refinements, meeting ASTM/DIN standards</li>
+    <li><strong>Patents filed</strong> for novel measurement methodologies (US20230100308A1, EP4343293A1)</li>
+</ul>
+        
+        <div class="job-header">
+            <div class="company">UK Atomic Energy Authority (UKAEA)</div>
+            <div class="date">November 2017 – December 2020</div>
+        </div>
+        <div class="job-title">Experimental Materials Scientist | United Kingdom</div>
+        
+        <div class="achievement">
+            <strong>Key Achievement:</strong> Created PULsE – high-performance open-source framework for laser flash analysis<br>
+            <a href="https://github.com/kotik-coder/PULsE">github.com/kotik-coder/PULsE</a>
+        </div>
+        
+        <div class="architecture-detail">
+            <strong>PULsE Architecture:</strong> Comprehensive framework demonstrating advanced software architecture patterns
+        </div>
+        
+        <ul>
+            <li>Designed <strong>reflection-based dynamic service discovery</strong> for automatic plugin loading and extensibility</li>
+            <li>Implemented <strong>hierarchical property management</strong> with bidirectional event propagation and observer patterns</li>
+            <li>Built <strong>concurrent task management system</strong> using ForkJoinPool, CompletableFuture, and ExecutorService for optimal multi-core utilization</li>
+            <li>Created <strong>self-aware object graph</strong> system with parent-child relationships and recursive operations</li>
+            <li>Developed <strong>modular layered architecture</strong> separating GUI, data processing, domain logic, and service layers</li>
+            <li>Implemented <strong>event-driven computation scheduling</strong> with cancellation, progress tracking, and priority management</li>
+            <li>Built comprehensive <strong>heat transfer models</strong> including conduction and efficient radiative transfer (RTE)</li>
+            <li>Optimized numerical kernels using primitive arrays and low-GC techniques for performance-critical operations</li>
+        </ul>
     </div>
 
     <div class="section">
-        <h2>Work Experience</h2>
-        
-        <h3><span class="company">Huawei</span> — Moscow, Russia</h3>
-        <div class="job-title">Senior Engineer A (Computational Modeling)</div>
-        <div class="date">March 2023 – Present</div>
+        <h2>Performance Technology Strategy</h2>
+        <p>
+            <strong>Performance-Critical First Approach:</strong> Select computational libraries based on performance requirements:
+        </p>
         <ul>
-            <li>Developed high-performance C++/Python solvers for transient thermomechanics using spectral collocation on CGL nodes / using FFTW, achieving spectral accuracy in very compact systems, resulting in sub <b>40 ms</b> performance to enable feedforward real-time corrections.</li>
-            <li>Optimized CPU performance using a mixture of Intel MKL/OpenBLAS for large/sparse matrices and custom procedures optmized down to SIMD level (particularly AVX2/AVX-512 intrinsics) and OpenMP with memory sharing on Intel i7-8700U, achieving significant speedups.</li>
-            <li>Applied customized stabilized explicit (DUMKA3) and implicit ESDIRK (TR-BDF2, adapted for linear problems with constant Jacobian) time integrators to enable <b>15–20×</b> larger time steps with controlled accuracy.</li>
-            <li>Accelerated solution by reducing factorization frequency on step-change only and using sparse linear solvers within Intel MKL PARDISO.</li>
-            <li>Achieved sub <b>2 ms</b> performance for multi-objective constrained dynamic trajectory optimization in convolution-type systems; replaced generic solvers (SLSQP/COBYLA) by linearising the convolution operation with Toeplitz matrix multiplication and deduced the stationary points from KKT conditions with constraints forced into the linear equation.</li>
+            <li><span class="performance-critical">Custom SIMD routines</span> for maximum performance on specific CPU architectures</li>
+            <li><span class="performance-critical">Intel MKL / OpenBLAS / LAPACK</span> for established high-performance linear algebra</li>
+            <li><strong>Apache Commons Math / Math.NET</strong> for rapid development and broad algorithm coverage</li>
         </ul>
-        
-        <h3><span class="company">Netzsch Gerätebau GmbH</span> — Germany</h3>
-        <div class="job-title">R&D Project Lead (LFA Measurement Systems)</div>
-        <div class="date">February 2021 – February 2022</div>
-        <ul>
-            <li>Modernized LFA software core by migrating legacy code to C# / Math.NET and integrating into the main C++ repository (Netzsch NIK Poland), improving stability and performance.</li>
-            <li>Developed and validated algorithms for complex samples: porous, semi-transparent (“through-plane”), in-plane orthotropic, and multilayer materials with interfacial thermal resistance.</li>
-            <li>Created a parametric laser/xenon pulse model using three-stage PCHIP splines and Levenberg–Marquardt optimization—deployed on all LFA 4x7/7x7 instruments, delivering a competitive advantage (featured at Digital Sales Meeting and displayed in all sales brochures).</li>
-            <li>Reduced real measurement uncertainty to <3% through model refinements, meeting ASTM/DIN best practices and closing the gap between eral performance and product specs on paper.</li>
-            <li>Implemented periodic noise suppression (reflections, convection, power-line interference) via spectral analysis and high-pass Fourier filtering, unified with existing 50/60 Hz filtering.</li>
-            <li>Automated heat-transfer model and parameter selection using AIC, BIC, and Fisher F-test for objective, reproducible results.</li>
-        </ul>
-        
-        <h3><span class="company">UK Atomic Energy Authority (UKAEA)</span> — United Kingdom</h3>
-        <div class="job-title">Experimental Material Scientist / Lead Architect of PULsE</div>
-        <div class="date">November 2017 – December 2020</div>
-        <p>Created <span class="highlight">PULsE</span>, an open-source Java application for inverse thermal analysis in LFA experiments (<a href="https://github.com/kotik-coder/PULsE">github.com/kotik-coder/PULsE</a>).</p>
-        <ul>
-            <li>Designed modular architecture using Strategy/Factory/Observer patterns with reflection-based runtime discovery for numerical schemes, optimizers, and exporters.</li>
-            <li>Implemented layered separation of numerical kernels, optimization workflows, metadata, I/O, and Swing UI for maintainability.</li>
-            <li>Built runtime metadata system with typed properties, validation, serialization, and GUI binding to support reproducible parameter sweeps.</li>
-            <li>Developed event-driven task manager with deterministic state transitions, responsive UI, and decoupled diagnostics for long-running jobs.</li>
-            <li>Implemented implicit finite-difference and ADI solvers with O(N) tridiagonal algorithms and memory-efficient stencils for multidimensional heat conduction.</li>
-            <li>Built full Levenberg–Marquardt pipeline with Jacobian computation, residual diagnostics, uncertainty estimation, and BIC-based model comparison.</li>
-            <li>Optimized performance via primitive arrays, buffer reuse, and GC-minimal design for large-scale parameter scans.</li>
-            <li>Integrated FFT-based diagnostics, nonlinear material models, and submodels for radiation, convection, and nonlinear losses.</li>
-            <li>Designed extensible plugin I/O (CSV, logs, metadata) and serializable project snapshots for reproducible workflows.</li>
-            <li>Developed Swing + JFreeChart GUI tools for experiment setup, real-time monitoring, and visualization.</li>
-        </ul>
+        <p>
+            <strong>Architecture Philosophy:</strong> Design systems that are both performant and maintainable, using appropriate 
+            patterns for each problem domain while maintaining clear separation of concerns.
+        </p>
     </div>
 
     <div class="section">
         <h2>Education</h2>
-        <p><strong>Ph.D. (Candidate of Sciences)</strong> — Condensed Matter Physics<br>
-        National Research Nuclear University MEPhI, Moscow — 2014</p>
-        
-        <p><strong>M.Eng. (Engineer-Physicist)</strong> — Physics of Metals<br>
-        National Research Nuclear University MEPhI, Moscow — 2011</p>
+        <div class="education-item">
+            <div class="education-degree">Ph.D. (Candidate of Sciences) — Condensed Matter Physics</div>
+            <div class="education-details">National Research Nuclear University MEPhI, Moscow — 2014</div>
+        </div>
+        <div class="education-item">
+            <div class="education-degree">M.Eng. (Engineer-Physicist) — Physics of Metals</div>
+            <div class="education-details">National Research Nuclear University MEPhI, Moscow — 2011</div>
+        </div>
     </div>
 </body>
 </html>
