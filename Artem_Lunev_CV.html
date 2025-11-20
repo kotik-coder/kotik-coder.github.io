@@ -82,14 +82,6 @@
             clear: both;
         }
         
-        .achievement {
-            background-color: #f8f9fa;
-            padding: 10px 15px;
-            margin: 15px 0;
-            border-radius: 5px;
-            border-left: 4px solid #27ae60;
-        }
-        
         .skill-category {
             margin-bottom: 15px;
         }
@@ -122,25 +114,25 @@
 
     <div class="section">
         <h2>Professional Summary</h2>
-        <p>Research Software Engineer specializing in computational modeling, high-performance computing, and scientific software architecture. Expertise spans from low-level processor optimization to high-level framework design, with proven track record in heat transfer modeling, inverse problems, and performance-critical systems.</p>
+        <p>Research Software Engineer with physics background specializing in performance-critical scientific computing. Developed multi-physics modeling systems for Huawei (thermomechanics), Netzsch (thermal/optical analysis), and UKAEA (thermal/radiative transfer). Expertise spans from micro-optimized C kernels to enterprise Java/Python frameworks, delivering sub-millisecond optimizations for real-time systems.</p>
     </div>
 
     <div class="section">
         <h2>Technical Skills</h2>
         
         <div class="skill-category">
-            <h3>Programming Languages</h3>
-            <div class="skill-items">C, Java, Python, C++, C#, SIMD/AVX, OpenMP</div>
+            <h3>Preferred Programming Languages</h3>
+            <div class="skill-items">C (performance-critical tasks), Java (enterprise applications), Python (prototyping)</div>
         </div>
         
         <div class="skill-category">
             <h3>High-Performance Computing</h3>
-            <div class="skill-items">Intel MKL, OpenBLAS, LAPACK, FFTW, Cache Optimization, Parallel Computing</div>
+            <div class="skill-items">Intel MKL, OpenBLAS, LAPACK, FFTW, Cache Optimization, Concurrency: OpenMP, asynchronous execution models, thread pooling for computational workloads</div>
         </div>
         
         <div class="skill-category">
-            <h3>Software Architecture</h3>
-            <div class="skill-items">Reflection Systems, Plugin Architecture, Hierarchical Data Management, Dynamic Service Discovery, Event-Driven Systems, Modular Design, Concurrent Task Scheduling</div>
+            <h3>System Architecture</h3>
+            <div class="skill-items">Plugin frameworks with runtime component discovery (Spring-like), concurrent task scheduling, memory-managed data pipelines</div>
         </div>
         
         <div class="skill-category">
@@ -159,17 +151,13 @@
         <div class="clearfix"></div>
         <div class="job-title">Senior Engineer A (Computational Modeling) | Moscow, Russia</div>
         
-        <div class="achievement">
-            <strong>Key Achievement:</strong> Developed high-performance solvers for transient thermomechanics achieving sub-40ms performance
-        </div>
-        
         <ul>
-            <li>Developed performance-critical C solvers using spectral collocation on Chebyshev-Gauss-Lobatto nodes</li>
-            <li>Optimized CPU performance using custom SIMD routines (AVX2/AVX-512) and Intel MKL</li>
+            <li>Developed performance-critical C solvers using spectral collocation, achieving sub-40ms performance per displacement field with spectral accuracy (absolute error below 1E-8)</li>
+            <li>Optimized CPU performance using custom SIMD routines (AVX2/AVX-512), achieving 2-3x speed-up compared to standard MKL/OpenBLAS on target CPUs</li>
             <li>Applied OpenMP parallelization and cache-aware memory layouts for multi-core efficiency</li>
-            <li>Implemented matrix-based and FFT-based approaches using FFTW library</li>
+            <li>Implemented matrix-based approaches using Intel MKL/OpenBLAS and FFT-based methods with FFTW library</li>
             <li>Used Python for rapid prototyping and algorithm validation</li>
-            <li>Developed custom trajectory optimization using Toeplitz matrix structure</li>
+            <li>Developed custom trajectory optimization using Toeplitz matrix structure and KKT-based derivation, achieving sub-2ms overall performance</li>
         </ul>
         
         <div class="job-header">
@@ -179,16 +167,12 @@
         <div class="clearfix"></div>
         <div class="job-title">R&D Project Lead (LFA Measurement Systems) | Germany</div>
         
-        <div class="achievement">
-            <strong>Key Achievement:</strong> Modernized LFA software core and developed patented measurement methodologies
-        </div>
-        
         <ul>
-            <li>Modernized legacy code to C# with Math.NET integration</li>
-            <li>Retained and optimized C++ performance kernels for computational operations</li>
-            <li>Developed algorithms for porous, semi-transparent, and multilayer materials</li>
-            <li>Created parametric laser pulse models using PCHIP splines and optimization</li>
-            <li>Reduced measurement uncertainty to under 3% through model refinements</li>
+            <li>Re-designed thermal models from scratch, replacing legacy code with modern C# and Math.NET integration</li>
+            <li>Integrated thermal model module into commercial Proteus LFA Analysis software (v8.5.0+)</li>
+            <li>Developed and validated algorithms for porous, semi-transparent, and multilayer materials</li>
+            <li>Created parametric laser pulse models using PCHIP splines and optimization, implementing functional pulse mapping for all LFA4x7/7x7 instruments</li>
+            <li>Reduced measurement uncertainty to under 3% through model refinements from previous 20% in legacy models</li>
             <li>Patents filed for novel measurement methodologies (US20230100308A1, EP4343293A1)</li>
         </ul>
         
@@ -199,18 +183,14 @@
         <div class="clearfix"></div>
         <div class="job-title">Experimental Materials Scientist | United Kingdom</div>
         
-        <div class="achievement">
-            <strong>Key Achievement:</strong> Created PULsE open-source framework for laser flash analysis and inverse heat transfer
-        </div>
-        
         <ul>
+            <li>Created PULsE open-source framework, enabling full thermo-optical coupling in LFA measurements for the first time in open-source or commercial software</li>
             <li>Designed reflection-based dynamic service discovery for automatic plugin loading</li>
             <li>Implemented hierarchical property management with bidirectional event propagation</li>
             <li>Built concurrent task management system using ForkJoinPool and ExecutorService</li>
             <li>Created self-aware object graph system with parent-child relationships</li>
             <li>Developed modular layered architecture separating GUI, data processing, and domain logic</li>
             <li>Implemented event-driven computation scheduling with cancellation and progress tracking</li>
-            <li>Built comprehensive heat transfer models including conduction and radiative transfer</li>
             <li>Optimized numerical kernels using primitive arrays and low-GC techniques</li>
         </ul>
     </div>
