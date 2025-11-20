@@ -1,113 +1,204 @@
 <!DOCTYPE html>
-<title>Resume</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.css">
-<script src="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.js"></script>
-<style>  
-  body { line-height:1.5; margin:auto; padding:3px; max-width:1024px; display:none; FONT-FAMILY:"Segoe UI",ARIAL; }
-  h1  { font-size:200%; padding:16px; border:1px solid lightgrey; BACKGROUND:#f0f0f0; }
-  h2  { border-bottom:1px solid grey; padding:2px }
-</style>
-<body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display='block';">
-<!--======= COPY ABOVE CODE AS HEADER, THEN FOLLOW WITH RESUME CONTENT IN MARKDOWN FORMAT =========-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artem Lunev - Senior Research Software Engineer / HPC Specialist</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .header {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 2.2em;
+        }
+        
+        h2 {
+            color: #34495e;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        h4 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            margin-top: 20px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .company {
+            font-weight: bold;
+            color: #2980b9;
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background-color: #fffacd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .languages {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Artem Lunev</h1>
+        <div class="subtitle">Senior Research Software Engineer / HPC Specialist / Performance-Critical Systems Developer</div>
+        
+        <div class="contact-info">
+            <div class="contact-item">Moscow, Russia</div>
+            <div class="contact-item">Telegram: <strong>@kotik_coder</strong></div>
+            <div class="contact-item">Phone: <strong>+7 (991) 920-5532</strong></div>
+            <div class="contact-item">Email: <strong><a href="mailto:alounev@list.ru">alounev@list.ru</a></strong></div>
+        </div>
+        
+        <div>
+            Citizenship: Russia • Willing to relocate • Open to travel
+            <span class="languages">• Languages: English (C2), Russian (Native), Portuguese (B1)</span>
+        </div>
+    </div>
 
-<img style="float:right;border-radius:50%;width:70px;padding:6px" src="https://avatars.githubusercontent.com/u/53570328?v=4" />
+    <div class="section">
+        <h2>Profile</h2>
+        <p>
+            Research software engineer specializing in numerical algorithms, high-performance computing (HPC), and performance optimization of latency-critical systems. Expertise in computational physics, scientific software architecture, and hardware-aware algorithm design. Proven track record in developing robust, reproducible, and high-efficiency solvers for PDEs/ODEs, inverse problems, and thermophysical modeling.
+        </p>
+    </div>
 
-<span style="float:right;padding:6px"> 
-email: [artem.v.lunev@gmail.com](mailto:artem.v.lunev@gmail.com) <br>
-mob.: +7 991 9205532 <br>
-Languages: English (C2), Português (B1), Russian (Native)
-</span>
+    <div class="section">
+        <h2>Skills</h2>
+        <p>
+            <strong>Languages & Platforms:</strong> Java, Python, C, C++, C#, Linux, Git, CI/CD<br>
+            <strong>HPC & Optimization:</strong> OpenMP, MPI, SIMD/AVX (AVX2, AVX-512), Intel MKL, OpenBLAS, FFTW, PARDISO, cache modeling, memory-layout optimization (SoA/AoS), microbenchmarking, branch prediction analysis, code profiling (perf, VTune, gprof, Valgrind)<br>
+            <strong>Numerical Methods:</strong> Spectral collocation, FEM, FDTD, ADI, stiff ODE/PDE solvers (DUMKA3, TR-BDF2/ESDIRK), tridiagonal solvers, Toeplitz systems, Levenberg–Marquardt, quasi-Newton, SLSQP, COBYLA, KKT conditions<br>
+            <strong>Scientific Computing:</strong> SciPy, NumPy, Math.NET, COMSOL, Meep, FEniCS, VTK, PyVista, HDF5<br>
+            <strong>Software Engineering:</strong> Modular architecture, MVP/Swing GUI, design patterns (Strategy, Factory, Observer), reflection-based discovery, event-driven task management, low-GC Java, primitive arrays, reproducible workflows, plugin-based IO<br>
+            <strong>Domain Expertise:</strong> Laser Flash Analysis (LFA), thermal diffusivity, radiative transfer (DOM), inverse heat transfer, porous/semi-transparent/orthotropic/multilayer materials, ASTM/DIN standards, uncertainty quantification, AIC/BIC/Fisher model selection, spectral noise filtering (FFT, high-pass, 50/60 Hz)
+        </p>
+    </div>
 
-# Artem Lunev
+    <div class="section">
+        <h2>Work Experience</h2>
+        
+        <h3><span class="company">Huawei</span> — Moscow, Russia</h3>
+        <div class="job-title">Senior Engineer A (Computational Modeling)</div>
+        <div class="date">March 2023 – Present</div>
+        <ul>
+            <li>Developed high-performance C++/Python solvers for transient thermomechanics using spectral collocation on CGL nodes / using FFTW, achieving spectral accuracy in very compact systems, resulting in sub <b>40 ms</b> performance to enable feedforward real-time corrections.</li>
+            <li>Optimized CPU performance using a mixture of Intel MKL/OpenBLAS for large/sparse matrices and custom procedures optmized down to SIMD level (particularly AVX2/AVX-512 intrinsics) and OpenMP with memory sharing on Intel i7-8700U, achieving significant speedups.</li>
+            <li>Applied customized stabilized explicit (DUMKA3) and implicit ESDIRK (TR-BDF2, adapted for linear problems with constant Jacobian) time integrators to enable <b>15–20×</b> larger time steps with controlled accuracy.</li>
+            <li>Accelerated solution by reducing factorization frequency on step-change only and using sparse linear solvers within Intel MKL PARDISO.</li>
+            <li>Achieved sub <b>2 ms</b> performance for multi-objective constrained dynamic trajectory optimization in convolution-type systems; replaced generic solvers (SLSQP/COBYLA) by linearising the convolution operation with Toeplitz matrix multiplication and deduced the stationary points from KKT conditions with constraints forced into the linear equation.</li>
+        </ul>
+        
+        <h3><span class="company">Netzsch Gerätebau GmbH</span> — Germany</h3>
+        <div class="job-title">R&D Project Lead (LFA Measurement Systems)</div>
+        <div class="date">February 2021 – February 2022</div>
+        <ul>
+            <li>Modernized LFA software core by migrating legacy code to C# / Math.NET and integrating into the main C++ repository (Netzsch NIK Poland), improving stability and performance.</li>
+            <li>Developed and validated algorithms for complex samples: porous, semi-transparent (“through-plane”), in-plane orthotropic, and multilayer materials with interfacial thermal resistance.</li>
+            <li>Created a parametric laser/xenon pulse model using three-stage PCHIP splines and Levenberg–Marquardt optimization—deployed on all LFA 4x7/7x7 instruments, delivering a competitive advantage (featured at Digital Sales Meeting and displayed in all sales brochures).</li>
+            <li>Reduced real measurement uncertainty to <3% through model refinements, meeting ASTM/DIN best practices and closing the gap between eral performance and product specs on paper.</li>
+            <li>Implemented periodic noise suppression (reflections, convection, power-line interference) via spectral analysis and high-pass Fourier filtering, unified with existing 50/60 Hz filtering.</li>
+            <li>Automated heat-transfer model and parameter selection using AIC, BIC, and Fisher F-test for objective, reproducible results.</li>
+        </ul>
+        
+        <h3><span class="company">UK Atomic Energy Authority (UKAEA)</span> — United Kingdom</h3>
+        <div class="job-title">Experimental Material Scientist / Lead Architect of PULsE</div>
+        <div class="date">November 2017 – December 2020</div>
+        <p>Created <span class="highlight">PULsE</span>, an open-source Java application for inverse thermal analysis in LFA experiments (<a href="https://github.com/kotik-coder/PULsE">github.com/kotik-coder/PULsE</a>).</p>
+        <ul>
+            <li>Designed modular architecture using Strategy/Factory/Observer patterns with reflection-based runtime discovery for numerical schemes, optimizers, and exporters.</li>
+            <li>Implemented layered separation of numerical kernels, optimization workflows, metadata, I/O, and Swing UI for maintainability.</li>
+            <li>Built runtime metadata system with typed properties, validation, serialization, and GUI binding to support reproducible parameter sweeps.</li>
+            <li>Developed event-driven task manager with deterministic state transitions, responsive UI, and decoupled diagnostics for long-running jobs.</li>
+            <li>Implemented implicit finite-difference and ADI solvers with O(N) tridiagonal algorithms and memory-efficient stencils for multidimensional heat conduction.</li>
+            <li>Built full Levenberg–Marquardt pipeline with Jacobian computation, residual diagnostics, uncertainty estimation, and BIC-based model comparison.</li>
+            <li>Optimized performance via primitive arrays, buffer reuse, and GC-minimal design for large-scale parameter scans.</li>
+            <li>Integrated FFT-based diagnostics, nonlinear material models, and submodels for radiation, convection, and nonlinear losses.</li>
+            <li>Designed extensible plugin I/O (CSV, logs, metadata) and serializable project snapshots for reproducible workflows.</li>
+            <li>Developed Swing + JFreeChart GUI tools for experiment setup, real-time monitoring, and visualization.</li>
+        </ul>
+    </div>
 
-[ResearchGate Profile](https://www.researchgate.net/profile/Artem-Lunev) <br> 
-[Google Scholar](https://scholar.google.ru/citations?user=oHQtRr0AAAAJ&hl=ru&oi=ao) <br>
-[Personal Project](https://kotik-coder.github.io/) <br>
-[YouTube Channel](https://www.youtube.com/@artemlunev4626/videos) <br>
-
----
-
-### Professional Profile
-
-Senior-level engineer and research scientist with over 10 years of experience in nuclear materials, thermal analysis (LFA), scientific instrumentation, and mathematical modeling (PDEs, inverse problems, atomistic simulations). Proven track record in leading R&D projects, hardware/software development, and cross-disciplinary collaboration. Seeking a senior research scientist, principal engineer, or R&D leadership role.
-
----
-
-### Professional Experience
-
-**Senior Engineer A** | Huawei Technologies
-*03/2023 – Present*
-*   Led PDE solver development: achieved multi-fold speedup via reduced-order modeling (MOR), spectral methods (spectral collocation, spectral elements), and adaptive integrators for stiff ODEs.
-*   Developed a fast multi-objective trajectory optimization routine for a multi-parametric actuator system with nonlinear constraints using Python/SciPy/NumPy.
-*   Performed low-level optimization (OpenMP / AVX / SIMD) for compact linear systems in C.
-
-**Research Associate** | ITMO University
-*03/2022 – 12/2022*
-*   Operated X-Ray Diffraction (XRD) and thermal analysis equipment; collected, analyzed data, and modified setups.
-*   Identified candidate crystal structures and phases using GSAS-II and Rietveld refinement to facilitate chemical synthesis.
-*   Developed methods to quantify and mitigate uncertainty in thermal measurements (stray light, convection, flashthroughs), incorporating models into a Java-based project (PULsE).
-
-**R&D Project Manager (Projektleiter F&E)** | Netzsch Gerätebau GmbH
-*02/2021 – 02/2022*
-*   Identified and remediated 12+ hardware design flaws (e.g., signal quality, component compatibility).
-*   Researched and explored new design opportunities involving novel materials, detection principles, and sample positioning.
-*   Managed the LFA 4x7 product line, providing technical sales and service support.
-*   Developed and enhanced advanced thermal models integrated into commercial software solutions.
-*   Collaborated with external research institutions on projects involving computational tomography and digital twins.
-
-**Experimental Materials Scientist** | UK Atomic Energy Authority (UKAEA)
-*11/2017 – 12/2020*
-*   Operated and maintained scientific instrumentation; trained new users and acquired data for internal and external research projects.
-*   Mentored two young graduates and Master's students on projects related to refractory metal oxidation and LFA hardware design.
-*   Managed troubleshooting, logistics, and procurement for scientific instruments (including orders, export control, and tender documentation).
-*   Collaborated with external institutions across the UK and Europe on high-impact research (divertor & first wall materials, blanket modules, neutron multipliers).
-
-**Postdoctoral Fellow** | Joint Institute for High Temperatures (JIHT)
-*01/2016 – 12/2018*
-*   **Project:** Dislocations in uranium dioxide (RFBR grant no. 16-38-60016/15)
-*   Established mobility laws for edge and screw dislocations in UO₂ using high-performance computing (LAMMPS, OVITO, DXA).
-*   Resolved complex data trends using Friedel-Escaig, cross-glide, and debris models.
-*   Developed a dislocation dynamics code to simulate grain restructuring in UO₂.
-*   Published high-impact papers and presented at international conferences (awarded Young Researcher Award at NuMat2016).
-
-**Engineer** | Kurchatov Institute
-*07/2015 – 12/2015*
-*   Supported TEM/SEM characterization of 32 MeV proton-irradiated Nb₃Ti superconductor samples.
-*   Performed gamma-spectroscopy to probe nuclear isotope inventory in irradiated samples.
-
-**Engineer** | National Research Nuclear University MEPhI
-*09/2010 – 03/2016*
-*   **Projects:** High burn-up structure formation (UO₂), Thermal decomposition (UN), Kvant LFA instrument, UMo alloy fabrication, UO₂ hot pressing, ROSATOM Materials Database.
-*   Designed and supervised three ion irradiation campaigns.
-*   Supervised instrument operation sessions and increased accuracy of in-house LFA instrumentation.
-*   Extracted process characteristics from TGA/DSC data using statistical analysis.
-*   Designed and manufactured composite press molds and punches for hot pressing.
-*   Implemented electronic control systems for furnaces using ADC/DAC interfaces.
-
----
-
-### Education
-
-**Doctorate (PhD) / Candidate of Physico-Mathematical Sciences**
-National Research Nuclear University MEPhI | *12/2014*
-*   **Thesis:** Modelling of the high burn-up structure in oxide nuclear fuel
-
-**Master of Engineering (MEng) / Engineer-Physicist**
-National Research Nuclear University MEPhI | *02/2011*
-*   **Thesis:** Molecular-dynamics modelling of heat conduction in UO₂
-
----
-
-### Key Skills
-
-*   **Materials Expertise:** Nuclear fuel ceramics (UO₂, UN, UMo), refractory metals oxidation, thermal characterization of metal foams, metal-organic frameworks (MOFs).
-*   **Instrumentation:** R&D lead & product manager for LFA (Netzsch); advanced microscopy & spectroscopy (UKAEA, ITMO, MEPhI).
-*   **Modeling & Simulation:** PDE solver & optimization (Huawei); inverse problem solvers for heat transfer (Netzsch, UKAEA); atomistic simulations (JIHT, LAMMPS).
-*   **Software & Computing:** Python (SciPy, NumPy), C/C#, Java, Linux, Git/TFS/Azure, OpenMP, AVX, SIMD.
-*   **Leadership & Management:** Team Leadership (up to 5 people), Technical Project Management (Agile/Kanban/JIRA).
-
-### Patents
-
-*   **US20230100308A1** Device For The Determination Of Temperature Parameters With Adjustable Sample Holder
-*   **EP4343293A1** Sample holder for holding a plate-shaped sample in a laser/light flash analysis
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>Ph.D. (Candidate of Sciences)</strong> — Condensed Matter Physics<br>
+        National Research Nuclear University MEPhI, Moscow — 2014</p>
+        
+        <p><strong>M.Eng. (Engineer-Physicist)</strong> — Physics of Metals<br>
+        National Research Nuclear University MEPhI, Moscow — 2011</p>
+    </div>
+</body>
+</html>
