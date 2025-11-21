@@ -127,17 +127,17 @@
         
         <div class="skill-category">
             <h3>High-Performance Computing</h3>
-            <div class="skill-items">Intel MKL, OpenBLAS, LAPACK, FFTW, Cache Optimization, Concurrency: OpenMP, asynchronous execution models, thread pooling for computational workloads</div>
+            <div class="skill-items">Intel MKL, OpenBLAS, FFTW, SIMD/AVX optimization, cache-aware memory layouts, OpenMP, HDF5</div>
         </div>
         
         <div class="skill-category">
             <h3>System Architecture</h3>
-            <div class="skill-items">Plugin frameworks with runtime component discovery (Spring-like), concurrent task scheduling, memory-managed data pipelines</div>
+            <div class="skill-items">Plugin frameworks with runtime component discovery, concurrent task scheduling, memory-managed data pipelines</div>
         </div>
         
         <div class="skill-category">
             <h3>Scientific Computing</h3>
-            <div class="skill-items">Heat Transfer Modeling, Radiative Transfer (RTE), Inverse Problems, Spectral Methods, ODE/PDE Solvers, Optimization Algorithms, Signal Processing, Uncertainty Quantification</div>
+            <div class="skill-items">Heat transfer modeling, ODE/PDE solvers (FEM/SEM/collocation), inverse problems, optimization algorithms, uncertainty quantification</div>
         </div>
     </div>
 
@@ -152,12 +152,11 @@
         <div class="job-title">Senior Engineer A (Computational Modeling) | Moscow, Russia</div>
         
         <ul>
-            <li>Developed performance-critical C solvers using spectral collocation, achieving sub-40ms performance per displacement field with spectral accuracy (absolute error below 1E-8)</li>
-            <li>Optimized CPU performance using custom SIMD routines (AVX2/AVX-512), achieving 2-3x speed-up compared to standard MKL/OpenBLAS on target CPUs</li>
+            <li>Developed performance-critical C solvers using spectral collocation, achieving sub-40ms performance per displacement field with spectral accuracy (error < 1E-8)</li>
+            <li>Optimized thermomechanical solvers using advanced time integration methods, achieving 15-20x speed-up in FEM systems</li>
+            <li>Implemented custom SIMD routines (AVX2/AVX-512) achieving 2-3x speed-up over standard MKL/OpenBLAS on target CPUs</li>
             <li>Applied OpenMP parallelization and cache-aware memory layouts for multi-core efficiency</li>
-            <li>Implemented matrix-based approaches using Intel MKL/OpenBLAS and FFT-based methods with FFTW library</li>
-            <li>Used Python for rapid prototyping and algorithm validation</li>
-            <li>Developed custom trajectory optimization using Toeplitz matrix structure and KKT-based derivation, achieving sub-2ms overall performance</li>
+            <li>Developed trajectory optimization systems achieving sub-2ms performance using specialized linear algebra</li>
         </ul>
         
         <div class="job-header">
@@ -170,8 +169,8 @@
         <ul>
             <li>Re-designed thermal models from scratch, replacing legacy code with modern C# and Math.NET integration</li>
             <li>Integrated thermal model module into commercial Proteus LFA Analysis software (v8.5.0+)</li>
-            <li>Developed and validated algorithms for porous, semi-transparent, and multilayer materials</li>
-            <li>Created parametric laser pulse models using PCHIP splines and optimization, implementing functional pulse mapping for all LFA4x7/7x7 instruments</li>
+            <li>Developed and validated algorithms for complex materials (porous, transparent, multi-layered)</li>
+            <li>Created parametric laser pulse models using PCHIP splines and optimization, implementing functional pulse mapping for LFA instruments</li>
             <li>Reduced measurement uncertainty to under 3% through model refinements from previous 20% in legacy models</li>
             <li>Patents filed for novel measurement methodologies (US20230100308A1, EP4343293A1)</li>
         </ul>
@@ -185,12 +184,10 @@
         
         <ul>
             <li>Created PULsE open-source framework, enabling full thermo-optical coupling in LFA measurements for the first time in open-source or commercial software</li>
-            <li>Designed reflection-based dynamic service discovery for automatic plugin loading</li>
-            <li>Implemented hierarchical property management with bidirectional event propagation</li>
-            <li>Built concurrent task management system using ForkJoinPool and ExecutorService</li>
-            <li>Created self-aware object graph system with parent-child relationships</li>
-            <li>Developed modular layered architecture separating GUI, data processing, and domain logic</li>
-            <li>Implemented event-driven computation scheduling with cancellation and progress tracking</li>
+            <li>Designed reflection-based plugin architecture with dynamic service discovery and concurrent task management</li>
+            <li>Implemented hierarchical data management with event-driven computation scheduling</li>
+            <li>Built self-aware object graph system supporting complex parent-child relationships and bidirectional updates</li>
+            <li>Developed multi-layer architecture separating GUI, data processing, and domain logic</li>
             <li>Optimized numerical kernels using primitive arrays and low-GC techniques</li>
         </ul>
     </div>
