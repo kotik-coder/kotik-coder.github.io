@@ -121,13 +121,13 @@
         <h2>Technical Skills</h2>
         
         <div class="skill-category">
-            <h3>Preferred Programming Languages</h3>
-            <div class="skill-items">C (performance-critical tasks), Java (enterprise applications), Python (prototyping)</div>
+            <h3>Core Languages</h3>
+            <div class="skill-items">C/C++ (performance-critical tasks), Java (enterprise applications), Python (prototyping)</div>
         </div>
         
         <div class="skill-category">
-            <h3>High-Performance Computing</h3>
-            <div class="skill-items">Intel MKL, OpenBLAS, FFTW, SIMD/AVX optimization, cache-aware memory layouts, OpenMP, HDF5</div>
+            <h3>High-Performance Computing (HPC)</h3>
+            <div class="skill-items">Intel MKL, OpenBLAS, LAPACK, FFTW, SIMD/AVX optimization, cache-aware memory layouts, OpenMP, HDF5</div>
         </div>
         
         <div class="skill-category">
@@ -152,11 +152,11 @@
         <div class="job-title">Senior Engineer A (Computational Modeling) | Moscow, Russia</div>
         
         <ul>
-            <li>Developed performance-critical C solvers using spectral collocation, achieving sub-40ms performance per displacement field with spectral accuracy (error < 1E-8)</li>
-            <li>Optimized thermomechanical solvers using advanced time integration methods, achieving 15-20x speed-up in FEM systems</li>
+            <li>Developed performance-critical thermomechanical solvers in C/C++ using spectral collocation, achieving sub-40ms performance per computational unit with accuracy governed by integration schemes</li>
+            <li>In spatially discretized systems, tailored time integration schemes (stabilized explicit, stiffly-accurate implicit, adaptive error control) based on specific eigenvalue spectra, achieving 15-20x speed-up compared to conventional approaches</li>
             <li>Implemented custom SIMD routines (AVX2/AVX-512) achieving 2-3x speed-up over standard MKL/OpenBLAS on target CPUs</li>
             <li>Applied OpenMP parallelization and cache-aware memory layouts for multi-core efficiency</li>
-            <li>Developed trajectory optimization systems achieving sub-2ms performance using specialized linear algebra</li>
+            <li>Developed an analytical optimization kernel for trajectory planning, coupled with fast linear algebra to achieve sub-2ms performance allowing faster and more accurate treatment than general optimizers.</li>
         </ul>
         
         <div class="job-header">
@@ -167,12 +167,14 @@
         <div class="job-title">R&D Project Lead (LFA Measurement Systems) | Germany</div>
         
         <ul>
-            <li>Re-designed thermal models from scratch, replacing legacy code with modern C# and Math.NET integration</li>
-            <li>Integrated thermal model module into commercial Proteus LFA Analysis software (v8.5.0+)</li>
-            <li>Developed and validated algorithms for complex materials (porous, transparent, multi-layered)</li>
-            <li>Created parametric laser pulse models using PCHIP splines and optimization, implementing functional pulse mapping for LFA instruments</li>
-            <li>Reduced measurement uncertainty to under 3% through model refinements from previous 20% in legacy models</li>
-            <li>Patents filed for novel measurement methodologies (US20230100308A1, EP4343293A1)</li>
+            <li>Re-designed model backend from scratch in <a href="https://analyzing-testing.netzsch.com/en/products/thermal-diffusivity-and-conductivity/lfa-717-hyperflash">Proteus LFA Analysis v8.5.0+</a> , reducing measurement uncertainty from 20% to 3%:</li>
+            <ul>
+            <li>replaced legacy code with modern C# and Math.NET / DSPLib integration, bringing in functional programming (LINQ) and Template Method design pattern</li>
+            <li>identified and remediated critical implementation errors in analysis models for complex media (porous, transparent, multi-layered, in-plane)</li>
+            <li>created parametric laser pulse models using multi-stage optimisation of a spline-interpolated pulse diode data, implementing functional pulse mapping for LFA instruments</li>
+            </ul>
+            <li>led collaboration with academic partners on computed-tomography reconstruction of heat conduction in metals foams (reported at <a href="https://ibsim.co.uk/media/presentations/2022/IBSim_4i_2022_23-ALunev.pdf">IBSim2022</a>)</li>
+            <li>Filed patents for novel measurement methodologies (US20230100308A1, EP4343293A1)</li>
         </ul>
         
         <div class="job-header">
@@ -183,12 +185,14 @@
         <div class="job-title">Experimental Materials Scientist | United Kingdom</div>
         
         <ul>
-            <li>Created PULsE open-source framework, enabling full thermo-optical coupling in LFA measurements for the first time in open-source or commercial software</li>
-            <li>Designed reflection-based plugin architecture with dynamic service discovery and concurrent task management</li>
-            <li>Implemented hierarchical data management with event-driven computation scheduling</li>
-            <li>Built self-aware object graph system supporting complex parent-child relationships and bidirectional updates</li>
-            <li>Developed multi-layer architecture separating GUI, data processing, and domain logic</li>
-            <li>Optimized numerical kernels using primitive arrays and low-GC techniques</li>
+            <p>Created PULsE open-source framework (<a href="https://github.com/kotik-coder/PULsE">github.com/kotik-coder/PULsE</a>) enabling platform-independent thermal measurements, featuring:</p>
+            <ul>
+            <li>full <a href="https://doi.org/10.1016/j.ijthermalsci.2020.106695">radiative-conductive coupling</a> in LFA measurements for the first time in open-source or commercial software</li>
+            <li>dynamic service discovery with reflection-based plugin architecture allowing virtually unlimited thermal models, optimizers and statistic handlers in one software package</li>
+            <li>hierarchical data management with event-driven computation scheduling for CPU load sharing</li>
+            <li>self-aware object graph system supporting complex parent-child relationships and bidirectional updates for seamless property updates</li>
+            <li>multi-layer architecture separating GUI, data processing, and domain logic</li>
+            </ul>
         </ul>
     </div>
 
