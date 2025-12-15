@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artem Lunev - Senior Computational & Experimental Scientist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        
+        .header {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 28px;
+        }
+        
+        h2 {
+            color: #34495e;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            font-size: 20px;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .contact-info {
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .job-header {
+            margin-bottom: 5px;
+        }
+        
+        .company {
+            font-weight: bold;
+            color: #2980b9;
+        }
+        
+        .date {
+            color: #7f8c8d;
+            float: right;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .clearfix {
+            clear: both;
+        }
+        
+        .skill-category {
+            margin-bottom: 15px;
+        }
+        
+        .skill-items {
+            margin: 5px 0 15px 0;
+        }
+        
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .subsection {
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Artem Lunev</h1>
+        <div style="color: #7f8c8d; font-size: 18px; margin-bottom: 15px;">Senior Computational & Experimental Scientist</div>
+        
+        <div class="contact-info">
+            <div>Moscow, Russia | +7 991 920 55 32 | Email: <a href="mailto:alounev@list.ru">alounev@list.ru</a></div>
+            <div>LinkedIn: <a href="https://www.linkedin.com/in/artem-lunev-vladimirovich">linkedin.com/in/artem-lunev-vladimirovich</a> | ResearchGate: <a href="https://www.researchgate.net/profile/Artem_Lunev">researchgate.net/profile/Artem_Lunev</a></div>
+            <div>GitHub: <a href="https://github.com/kotik-coder">github.com/kotik-coder</a> | Personal: <a href="https://kotik-coder.github.io/">kotik-coder.github.io</a></div>
+            <div>Languages: Russian (Native), English (Professional Working), Portuguese (Limited Working), French (Elementary)</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Summary</h2>
+        <p>Senior R&D Engineer & Computational Scientist with 15 years of experience turning complex physics into high-performance, production-ready software and experimental methodologies. Led the development of mission-critical solvers for real-time laser control (Huawei), next-generation analytical instruments (Netzsch), and nuclear fusion research (UKAEA). Core competency: bridging the gap between deep physical models and extreme computational efficiency, achieving sub-millisecond latency and 15-20x speedups through algorithmic innovation and low-level optimisation. Specialises in materials characterisation, thermal analysis, and multi-scale modelling.</p>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        
+        <div class="skill-category">
+            <h3>Materials Characterisation</h3>
+            <div class="skill-items">Thermal Analysis (LFA, DSC, TGA), X-ray Diffraction (Rietveld refinement, GSAS-II), Microstructural Analysis (SEM/EBSD/EDX, Raman Spectroscopy, Confocal & Tunnelling Microscopy), X-ray Computed Tomography.</div>
+        </div>
+        
+        <div class="skill-category">
+            <h3>Computational Modelling</h3>
+            <div class="skill-items">Atomistic Simulation (LAMMPS, Molecular Dynamics), Dislocation Dynamics, Finite Element Analysis, Numerical Methods for PDEs.</div>
+        </div>
+        
+        <div class="skill-category">
+            <h3>Instrumentation & Software</h3>
+            <div class="skill-items">Development of analytical instruments (LFA), Scientific Programming (C++, C#, Python, SIMD/AVX), High-performance Computing (HPC), CAD/PLM (SolidWorks, SAP).</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Experience</h2>
+        
+        <div class="job-header">
+            <span class="company">Huawei Technologies</span>
+            <span class="date">March 2023 – December 2025</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="job-title">Senior Engineer A | Moscow, Russia</div>
+        <ul>
+            <li>Developed and implemented low-latency thermomechanical solvers in C/C++ using spectral collocation methods, achieving performance of <40ms per computational unit for real-time analysis.</li>
+            <li>Created tailored time-integration schemes (stabilised explicit, stiffly-accurate implicit) for spatially discretised systems, resulting in a 15-20x speed-up in simulating stiff materials compared to standard approaches.</li>
+            <li>Wrote custom SIMD routines (AVX2/AVX-512) and optimised memory layouts, improving computational throughput by a factor of 2-3 over standard libraries on target hardware.</li>
+            <li>Built an analytical optimisation kernel for multi-parameter trajectory planning, using fast linear algebra to achieve sub-2ms performance for dynamic control.</li>
+            <li>Applied a combination of FEM, SEM, and FDM techniques to solve materials-relevant partial differential equations, translating physical models into efficient, production-ready software.</li>
+        </ul>
+        
+        <div class="job-header">
+            <span class="company">ITMO University</span>
+            <span class="date">March 2022 – December 2022</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="job-title">Senior Researcher | St Petersburg, Russia</div>
+        <ul>
+            <li>Developed novel analytical methodologies for complex materials, including a Rietveld refinement technique treating atomic positions in thin-film MOFs as optimisation variables to track solvent-induced structural evolution (contributed to <em>Materials Horizons</em>).</li>
+            <li>Identified and modelled a primary source of systematic error in Laser Flash Analysis (LFA) for highly conductive materials, linking it to laser beam re-reflection and IR detector overload, and proposed a corrected physical model (published in <em>Applied Physics Letters</em>).</li>
+            <li>Quantified the error (>10% in diffusivity) introduced by the classical diathermic model at low Planck numbers (Np). Established Np > 3.5 as the validity criterion and developed a comprehensive coupled radiative-conductive model with circumferential heat fluxes for accurate analysis outside this range (published in <em>Advanced Functional Materials</em>).</li>
+            <li>Applied computational modelling and analytical techniques to deconvolute measurement artefacts from intrinsic material properties, improving the accuracy of thermal diffusivity data.</li>
+        </ul>
+        
+        <div class="job-header">
+            <span class="company">NETZSCH Analyzing & Testing</span>
+            <span class="date">February 2021 – February 2022</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="job-title">R&D Project Lead (LFA Measurement Systems) | Selb, Germany</div>
+        <ul>
+            <li>Oversaw the full systems development for LFA 4x7 / 7x7 instruments, including pulse generation & delivery (Pockels cell), vacuum/gas systems, detection systems, and temperature measurement/calibration for furnace stability control.</li>
+            <li>Led the complete redevelopment of the backend for the Proteus LFA analysis software (v8.5.0+), using modern C# and Math.NET to reduce overall measurement uncertainty from 20% to 3%.</li>
+            <li>Designed novel sample holders and optimised purge-gas delivery systems to minimise parasitic radiation and contact resistance, improving measurement accuracy and instrument reliability (patents: US20230100308A1, EP4343293A1).</li>
+            <li>Identified and corrected critical errors in the implementation of thermal models for complex media (porous, transparent, multi-layered), ensuring accurate diffusivity analysis.</li>
+            <li>Initiated and managed an international research collaboration combining LFA, X-ray tomography, and FEM to model heat conduction in metal foams, resulting in joint publications (e.g., <em>International Journal of Thermal Sciences</em>).</li>
+        </ul>
+        
+        <div class="job-header">
+            <span class="company">UK Atomic Energy Authority</span>
+            <span class="date">November 2017 – December 2020</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="job-title">Experimental Materials Scientist | Abingdon, United Kingdom</div>
+        <ul>
+            <li>Led experimental investigations into radiation, corrosion, and high-temperature resistance of fusion reactor materials (e.g., divertor, first wall) under operational loads (temperature, ion fluxes) and accident scenarios (oxidising atmosphere, plasma disruptions), using spatially-correlated surface-sensitive techniques (Raman spectroscopy, confocal microscopy, EBSD) and thermal analysis.</li>
+            <li>Established advanced protocols for thermal analysis (Flash DSC, Nano/Pico-TR) and microstructural characterisation of irradiated materials, and led procurement of specialised instrumentation.</li>
+            <li>Coordinated international research collaborations with UK academic partners (University of Huddersfield, Manchester, Birmingham) and Russian institutions, managing projects from experimental design to data analysis.</li>
+            <li>Developed <strong>PULsE</strong>, an open-source, platform-independent framework for thermal analysis, featuring a novel full radiative-conductive coupling model for LFA and a dynamic plugin architecture for extensible thermal modelling.</li>
+            <li>Conducted computational materials science research using molecular dynamics and dislocation dynamics to study defect evolution and mechanical properties in nuclear materials, resulting in Q1 publications.</li>
+        </ul>
+        
+        <div class="job-header">
+            <span class="company">Joint Institute for High Temperatures, RAS</span>
+            <span class="date">January 2016 – December 2018</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="job-title">Research Fellow | Moscow, Russia</div>
+        <ul>
+            <li>Performed large-scale molecular dynamics simulations (LAMMPS) on HPC clusters to study dislocation dynamics in UO₂, with key findings published in high-impact journals (e.g., <em>International Journal of Plasticity</em>).</li>
+            <li>Developed methods for creating controlled defect configurations via applied shear stress and automated dislocation trajectory analysis using OVITO and custom Python scripts.</li>
+            <li>Built a prototype mesoscale solver to simulate collective dislocation dynamics, predicting polygonisation conditions—a key degradation mechanism in ceramics under irradiation.</li>
+            <li>Validated multi-scale models against experimental data and contributed to the field's discourse as a co-editor of a special issue in <em>Defect and Diffusion Forum</em>.</li>
+            <li>Recognised with the Young Researcher Award (2nd Place) at the NuMat 2016 conference for contributions to the field.</li>
+        </ul>
+        
+        <div class="job-header">
+            <span class="company">National Research Nuclear University MEPhI</span>
+            <span class="date">April 2010 – May 2016</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="job-title">Research Engineer | Moscow, Russia</div>
+        <ul>
+            <li>Modelled high burn-up nuclear fuel behaviour: fabricated SIMFUEL-type samples in Obninsk, then performed ion irradiation experiments (Swift Heavy Ions: Xe, 90 MeV; Low-Energy Ions: Xe, 320 keV & He, 20 keV) at JINR cyclotrons (Dubna) to analyse microstructural reconfiguration and HBS formation.</li>
+            <li>Studied the thermal stability of advanced nitride fuels (e.g., (U,Mm)N) using TGA/DSC up to 2400°C in high-purity helium, successfully extracting activation energies and chemical stages of decomposition to advance the understanding of UN degradation.</li>
+            <li>Developed characterisation protocols using SEM/EDX and tunnelling microscopy for detailed microstructural investigation of irradiated and fabricated materials.</li>
+            <li>Contributed to the development and metrological calibration of the "Kvant" thermal conductivity measurement instrument, designing software and verifying performance with reference samples.</li>
+            <li>Authored and co-authored multiple research papers in journals including <em>Journal of Nuclear Materials</em>, documenting findings on radiation damage and fuel fabrication.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Honours & Awards</h2>
+        <ul>
+            <li>Scholarship of the President of the Russian Federation (2012-2014).</li>
+            <li>Young Researcher Award (2nd Place, NuMat 2016 Conference).</li>
+            <li>IAEA Conference Grants to present research on fuel performance at the International WWER Fuel Performance Meetings (2013, 2017).</li>
+            <li>Additional academic awards including Research Fellowship, Postgraduate Student Award, and Promising Lecturer Award.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Patents</h2>
+        <ul>
+            <li><strong>Lunev, A.</strong> et al. "Sample holder for holding a plate-shaped sample in a laser/light flash analysis." US20230100308A1, EP4343293A1 (2023).</li>
+            <li><strong>Lunev, A.</strong> et al. "Device for the Determination of Temperature Parameters with Adjustable Sample Holder." Patent Pending.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>Doctor of Philosophy (PhD), Condensed Matter and Materials Physics</strong><br>
+        National Research Nuclear University MEPhI, Moscow (2011 – 2014)</p>
+        
+        <p><strong>Master of Engineering (MEng), Metallurgical Engineering</strong><br>
+        National Research Nuclear University MEPhI, Moscow (2005 – 2011)</p>
+    </div>
+</body>
+</html>
